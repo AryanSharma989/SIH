@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 1.6rem;
+  height: 1.6rem;
+  background: #000000;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #000000 35.82%, #A32EFF 100%);
+  z-index: 1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4.3rem;
+  height: 4rem;
+  transition: 0.6s;
+  padding-left: 4rem;
+  z-index: 9999;
+  color: #fff;
+}
+
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links ul li {
+  padding-left: 2rem;
+  padding-right: 5rem;
+  position: relative;
+}
+
+.nav-links ul li a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+  color: #000;
+}
+
+.nav-links ul li::after {
+  content: '';
+  width: 0%;
+  height: 0.4rem;
+  background: #8F00FF;
+  display: block;
+  margin: auto;
+  transition: width 0.2s ease-in-out;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.logo {
+  font-size: 30px;
+  color: #00b7e9;
+  font-weight: 600;
+  position: relative;
+  right: 46px;
+}
+
+.main {
+  display: grid;
+  justify-content: center;
+  margin-top: 130px;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 65px;
+  font-weight: 700;
+  color: #fff;
+  width: 1050px;
+  letter-spacing: 0.4px;
+}
+
+.below_tagline {
+  font-size: 27px;
+  font-weight: 600;
+  color: #ffffff;
+  width: 793px;
+  text-align: center;
+  margin-top: 45px;
+  margin-left: 130px;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+}
+
+.gpt_btn {
+  color: #fff;
+  background-color: #00b7e9;
+  font-weight: 700;
+  padding: 14px 18px;
+  border: 0;
+  border-radius: 45px;
+  cursor: pointer;
+  width: 250px;
+  text-align: center;
+  font-size: 26px;
+  text-decoration: none;
+  box-shadow: 0 0 10px #00b7e9;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gpt_btn:hover {
+  transform: scale(1.05);
+}
+
+
+.about {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #A32EFF;
+  padding-top: 110px;
+}
+
+
+.imga {
+  height: 34vw;
+  border: 5px solid #00b7e9;
+  border-radius: 6px;
+  transition: .4s;
+  -moz-box-shadow: 0 0 20px #00b7e9;
+  -webkit-box-shadow: 0 0 20px #00b7e9;
+  box-shadow: 0 0 12px #00b7e9;
+}
+
+.text-ai {
+  width: 38.5vw;
+  height: 35vw;
+  margin-left: -1vw;
+}
+
+
+.about-us {
+  font-size: 4.8vw;
+  color: var(--secondary-color);
+  letter-spacing: 2px;
+  border-bottom: 1px solid #514f4f;
+}
+
+.about-us::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 17.84vw;
+  height: 3px;
+  background: #00b7e9;
+}
+
+.para {
+  font-size: 1.5vw;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 1.3vw;
+  font-weight: 600;
+}
+
+#contact-us {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #A32EFF;
+  padding-top: -60px;
+}
+
+.us {
+  margin-bottom: 2vw;
+}
+
+.send {
+  font-size: 4.3vw;
+  color: #fff;
+}
+
+input,
+textarea {
+  padding: 1.5vw 2vw;
+  width: 40vw;
+  border-radius: 1vw;
+  margin-bottom: 2.5vw;
+  outline: none;
+  background: transparent;
+  border: 2px solid #000;
+  color: #ffffff;
+}
+
+.leave {
+  padding: 0.5vw 4.3vw;
+  border: none;
+  font-size: 2.2vw;
+  border-radius: 5px;
+  background: #00b7e9;
+  color: white;
+  cursor: pointer;
+  transition: .4s;
+  font-weight: bold;
+}
+
+.leave:hover {
+  -moz-box-shadow: 0 0 12px #ff00e3;
+  -webkit-box-shadow: 0 0 12px #ff00e3;
+  box-shadow: 0 0 20px #ff00e3;
+
+}
+
+input,
+textarea::placeholder {
+  font-size: 1vw;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+#footer {
+  width: 100VW;
+  height: 25vh;
+  background: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.foot {
+  font-size: 3vw;
+  color: #fff;
+  padding-left: 4vw;
+  transition: .6s;
+}
+
+.foot:hover {
+  color: #0634ff;
+}
+
+.copy {
+  font-size: 1.2vw;
+  color: #fff;
+  padding-right: 2vw
+}
